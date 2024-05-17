@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h4> 7. Enter a list of films you like From the list print your most favourite film Add one more film to the list Pop one element from list Delete the least interseted film from list Make a different array from 3rd position to 6th position Find the position of film acted by your favourite actor</h4>
+<body>
+    <script>
+        let x=["ironman","superman","thor","blackpanther","wonderwomen","antman","spiderman","doctorstrange","blackwidow"]
+        document.write("list of FILIMS :- ",x);
+        document.write("<br> my favorite filim:",x[0]);
+        x[3]="captain america";
+        document.write("<br> Addiing captain america to the list :<br>",x);
+        x.pop();
+        document.write("after pop : "+x)
+        delete(x[2]);
+    document.write("<br> deleting the 2 nd element:-",x);
+
+    const myfav1=x.slice(3,6);
+    document.write("<br> sliceing:",myfav1);
+
+    a=x.indexOf("spiderman")
+    document.write("<br>spiderman position:-",a+1)
+    
+
+
+    </script>
+    
+</body>
+</html>
